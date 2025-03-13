@@ -1,0 +1,113 @@
+.lines {
+    display: flex;
+}
+.line_block {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.line_number {
+    font-size: 30px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.line_name {
+    font-size: 16px;
+    margin: 0px auto;  
+}
+.line_counter {
+    font-size: 100px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.line_wait_time {
+    font-size: 15px;
+    margin: 0px auto;
+}
+.button_panel {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.info {
+    width: 30px;
+    height: 30px;
+}
+.open_queue {
+    width: 30px;
+    height: 30px;
+}
+.lines_queue {
+    display: flex;
+}
+.queue_list {
+    width: 299px;
+    height: 299px;
+    margin-top: 20px;
+    border: 1px solid;
+    padding: 0;
+    overflow: auto;
+    margin-right: 20px;
+}
+.queue_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.alfa {
+    background-color: #35d969;
+}
+.vista {
+    background-color: #eabf17;
+}
+.swift {
+    background-color: #ea3317;
+}
+.sharp {
+    background-color: #a8b7ad;
+}
+
+.info_alfa {
+    width: 200px;
+    height: 150px;
+    padding-left: 5px;
+    position: absolute;
+    background-color: aliceblue;
+    top: 105px;
+    left: 50px;
+}
+.info_vista {
+    width: 200px;
+    height: 150px;
+    padding-left: 5px;
+    position: absolute;
+    background-color: aliceblue;
+    top: 105px;
+    left: 375px;
+}
+.info_swift {
+    width: 200px;
+    height: 150px;
+    padding-left: 5px;
+    position: absolute;
+    background-color: aliceblue;
+    top: 105px;
+    left: 700px;
+}
+.info_sharp {
+    width: 200px;
+    height: 150px;
+    padding-left: 5px;
+    position: absolute;
+    background-color: aliceblue;
+    top: 105px;
+    left: 1025px;
+}
