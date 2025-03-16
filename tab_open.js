@@ -60,8 +60,8 @@ function queueClick(id1, id2) {
 
 //Функція для паузи лінії
 function pauseLinesButton() {
-    const pause = `<img src="/images/pause-svgrepo-com.svg" alt="pause_icon" height="30px" width="30px">`;
-    const play = `<img src="/images/play-svgrepo-com.svg" alt="play_icon" height="30px" width="30px">`;
+    const pause = `<img src="./images/pause-svgrepo-com.svg" alt="pause_icon" height="30px" width="30px">`;
+    const play = `<img src="./images/play-svgrepo-com.svg" alt="play_icon" height="30px" width="30px">`;
     if (document.querySelector(".lines_pause_button").querySelector("img").alt == "play_icon") {
         document.querySelector(".lines_pause_button").querySelector("img").insertAdjacentHTML("afterend", pause);
         document.querySelector(".lines_pause_button").querySelector("img").remove();
@@ -149,6 +149,7 @@ function addLineToList(name) {
                 <div class="button_panel">
                     <button class="info" onclick="infoClick('${linesInfo[i].id}_info')">i</button>
                     <button class="open_queue" onclick="queueClick('${linesInfo[i].id}_queue', '${linesInfo[i].id}_block')">q</button>
+                    <button><img src="./images/red-circle-svgrepo-com.svg" alt="" width="10px" height="10px"></button>
                 </div>
                 <div class="info_tab is-hidden" id="${linesInfo[i].id}_info">
                     <p>Email: ${linesInfo[i].lineEmail}</p>

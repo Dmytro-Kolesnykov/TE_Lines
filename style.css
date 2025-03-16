@@ -83,6 +83,8 @@ header {
     display: flex;
     margin: 0px auto;
     margin-top: 20px;
+    width: 150px;
+    justify-content: space-around;
 }
 .info {
     width: 30px;
