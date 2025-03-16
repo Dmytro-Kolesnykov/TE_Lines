@@ -1,12 +1,63 @@
+body {
+    margin: 0;
+}
+header {
+    height: 30px;
+    border-bottom: solid 1px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.menu_button {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    margin-right: 900px;
+}
+.menu_block {
+    z-index: 10;
+    width: 100px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.lines_pause_button {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    margin-right: 50px;
+}
+.lines_close_button {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    margin-right: 50px;
+}
+.agent_name {
+    font-size: 18px;
+    margin: 0;
+}
 .lines {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 .line_block {
     width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .line_number {
@@ -26,6 +77,7 @@
 .line_wait_time {
     font-size: 15px;
     margin: 0px auto;
+    height: 18px;
 }
 .button_panel {
     display: flex;
@@ -40,17 +92,16 @@
     width: 30px;
     height: 30px;
 }
-.lines_queue {
-    display: flex;
-}
 .queue_list {
     width: 299px;
     height: 299px;
     margin-top: 20px;
     border: 1px solid;
+    position: relative;
+    top: 20px;
+    left: 0;
     padding: 0;
     overflow: auto;
-    margin-right: 20px;
 }
 .queue_item {
     display: flex;
@@ -58,56 +109,26 @@
     padding: 10px 30px;
 }
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
 }
-.alfa {
+.green-line {
     background-color: #35d969;
 }
-.vista {
+.yellow-line {
     background-color: #eabf17;
 }
-.swift {
+.red-line {
     background-color: #ea3317;
 }
-.sharp {
+.grey-line {
     background-color: #a8b7ad;
 }
 
-.info_alfa {
+.info_tab {
     width: 200px;
     height: 150px;
     padding-left: 5px;
     position: absolute;
     background-color: aliceblue;
-    top: 105px;
-    left: 50px;
-}
-.info_vista {
-    width: 200px;
-    height: 150px;
-    padding-left: 5px;
-    position: absolute;
-    background-color: aliceblue;
-    top: 105px;
-    left: 375px;
-}
-.info_swift {
-    width: 200px;
-    height: 150px;
-    padding-left: 5px;
-    position: absolute;
-    background-color: aliceblue;
-    top: 105px;
-    left: 700px;
-}
-.info_sharp {
-    width: 200px;
-    height: 150px;
-    padding-left: 5px;
-    position: absolute;
-    background-color: aliceblue;
-    top: 105px;
-    left: 1025px;
+    z-index: 5;
 }
