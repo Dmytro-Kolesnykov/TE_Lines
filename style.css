@@ -1,5 +1,13 @@
 body {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 header {
     height: 30px;
@@ -14,24 +22,40 @@ header {
     width: 30px;
     padding: 0;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: 900px;
 }
 .menu_block {
     z-index: 10;
-    width: 100px;
-    height: 500px;
-    background-color: #fff;
+    width: 300px;
+    max-height: 600px;
+    background-color: #b7b8b8;
     position: absolute;
-    top: 50px;
+    top: 51px;
     left: 0;
+    overflow: auto;
+
+}
+.lines_list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 30px;
+}
+.lines_item {
+    margin-bottom: 20px;
+}
+.lines_button {
+    font-size: 20px;
+    background-color: #fff;
+    border: solid 0.5px;
+    width: 250px;
 }
 .lines_pause_button {
     height: 30px;
     width: 30px;
     padding: 0;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: 50px;
 }
 .lines_close_button {
@@ -39,7 +63,7 @@ header {
     width: 30px;
     padding: 0;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     margin-right: 50px;
 }
 .agent_name {
@@ -57,7 +81,8 @@ header {
     height: 300px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .line_number {
@@ -123,12 +148,12 @@ header {
     background-color: #ea3317;
 }
 .grey-line {
-    background-color: #a8b7ad;
+    background-color: #a3a3a3;
 }
 
 .info_tab {
-    width: 200px;
-    height: 150px;
+    max-width: 295px;
+    max-height: 250px;
     padding-left: 5px;
     position: absolute;
     background-color: aliceblue;

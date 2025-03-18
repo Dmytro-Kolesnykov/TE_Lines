@@ -35,6 +35,42 @@ const linesInfo = [
     linePhone: "+1(862)208-38-48",
     linePrefix: "03",
     lineSales: "755",
+    },
+    {
+    id: "TE",
+    name: "Trackensure ELD",
+    lineNumber: "700",
+    lineEmail: "safety.trackensure@gmail.com",
+    linePhone: "+1(916)860-1234",
+    linePrefix: "-",
+    lineSales: "704",
+    },
+    {
+    id: "TERU",
+    name: "Trackensure RU/URK ELD",
+    lineNumber: "701",
+    lineEmail: "safety.trackensure@gmail.com",
+    linePhone: "+1(916)860-1234",
+    linePrefix: "-",
+    lineSales: "704",
+    },
+    {
+    id: "CB",
+    name: "Callback",
+    lineNumber: "800",
+    lineEmail: "safety.trackensure@gmail.com",
+    linePhone: "+1(916)860-1234",
+    linePrefix: "-",
+    lineSales: "704",
+    },
+    {
+    id: "CBRU",
+    name: "Callback RU/UKR",
+    lineNumber: "801",
+    lineEmail: "safety.trackensure@gmail.com",
+    linePhone: "+1(916)860-1234",
+    linePrefix: "-",
+    lineSales: "704",
     }
 ]
 const linesBlock = document.getElementById("lines");

@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lines</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="menu_block is-hidden" id="menu_block">
             <ul class="lines_list">
                 <li class="lines_item">
-                    <button onclick="addLineToList('alfa')">710</button>
+                    <button class="lines_button" onclick="addLineToList('alfa')">Alfa ELD<br>710</button>
                 </li>
                 <li class="lines_item">
-                    <button onclick="addLineToList('vista')">720</button>
+                    <button class="lines_button" onclick="addLineToList('vista')">Vista ELD<br>720</button>
                 </li>
                 <li class="lines_item">
-                    <button onclick="addLineToList('swift')">740</button>
+                    <button class="lines_button" onclick="addLineToList('swift')">Swift ELD<br>740</button>
                 </li>
                 <li class="lines_item">
-                    <button onclick="addLineToList('sharp')">766</button>
+                    <button class="lines_button" onclick="addLineToList('sharp')">Sharp ELD<br>766</button>
+                </li>
+                <li class="lines_item">
+                    <button class="lines_button" onclick="addLineToList('TE')">Trackensure<br>700</button>
+                </li>
+                <li class="lines_item">
+                    <button class="lines_button" onclick="addLineToList('TERU')">Trackensure RU/UKR<br>701</button>
+                </li>
+                <li class="lines_item">
+                    <button class="lines_button" onclick="addLineToList('CB')">Callback<br>800</button>
+                </li>
+                <li class="lines_item">
+                    <button class="lines_button" onclick="addLineToList('CBRU')">Callback RU/UKR<br>801</button>
                 </li>
             </ul>
         </div>
@@ -36,11 +52,13 @@
         <p class="agent_name">Dmytro Kolesnykov ext.488</p>
     </header>
     <main>
+        <!-- Сервісні кнопки -->
+        <button onclick="addCallToLine()">add</button>
+        <button onclick="deleteCallFromLine()">remove</button>
+        <!-- Сервісні кнопки -->
+        <span>Кнопки для додавання дзвінків, працюють тільки з Альфа лінією</span>
         <div class="lines" id="lines"></div>
     </main>
-    
-    <button onclick="addCallToLine()">add</button>
-    <button onclick="deleteCallFromLine()">remove</button>
     <script src="./tab_open.js"></script>
 </body>
 </html>
